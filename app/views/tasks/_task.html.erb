@@ -1,0 +1,32 @@
+<div id="<%= dom_id task %>">
+  <p>
+    <strong>id:</strong>
+    <%= task.id %>
+  </p>
+
+  <p>
+    <strong>タイトル:</strong>
+    <%= task.tite %>
+  </p>
+
+  <p>
+    <strong>開始日:</strong>
+    <%= task.start_at&.strftime('%Y年%m月%d日 %H時%M分') %>
+  </p>
+
+  <p>
+    <strong>終了日:</strong>
+    <%= task.end_at&.strftime('%Y年%m月%d日 %H時%M分') %>
+  </p>
+
+  <p>
+    <strong>終日:</strong>
+    <%= task.is_all_day ? 'O' : 'X' %>
+  </p>
+
+  <p>
+    <strong>スケジュール更新日:</strong>
+    <%= task.created_at&.strftime('%Y年%m月%d日 %H時%M分') %>
+  </p>
+
+</div>

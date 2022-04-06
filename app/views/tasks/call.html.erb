@@ -1,0 +1,54 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @task %>
+
+
+button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        padding: 0;
+        appearance: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+new/viw
+<h1>スケジュールの新規作成</h1>
+
+<%= render "form", task: @task %>
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    text-decoration: underline;
+    cursor: auto;
+}
+a:-webkit-any-link:active {
+    color: -webkit-activelink
+}
+/* HTML5 ruby elements */
+ruby, rt {
+    text-indent: 0; /* blocks used for ruby rendering should not trigger this */
+}
+rt {
+    line-height: normal;
+    -webkit-text-emphasis: none;
+}
+ruby > rt {
+    display: block;
+    font-size: 50%;
+    text-align: start;
+}

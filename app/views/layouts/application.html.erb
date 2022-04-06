@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Schedule1</title>
+    <title>Schedule</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,17 @@
   </head>
 
   <body>
+  <header>
+    <h1>Ruby on Rails スケジュール管理アプリ</h1>
+  </header>
+
     <%= yield %>
+
+    <footer>
+    <h1>
+    現在日時:<%= Date.current.strftime('%Y/%m/%d') %>
+    スケジュールの合計: <%= @tasks.length if @tasks.present? %>
+    </h1>
+  </footer>
   </body>
 </html>
